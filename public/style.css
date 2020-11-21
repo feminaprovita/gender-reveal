@@ -1,9 +1,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: lemonchiffon;
+  background: violet;
   text-align: center;
+  font-size: 300%;
   margin: 0;
-  /* position: absolute; */
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -16,47 +17,3 @@ a {
 a:hover {
   cursor: pointer;
 }
-
-#home-container {
-  position: absolute;
-}
-
-#boy-text {
-  color:mediumblue;
-}
-
-#girl-text {
-  color: magenta;
-}
-
-.reveal:before {
-  background: violet;
-  /* content: ''; */
-  /* display: inline-block; */
-  height: 100%;
-  width: 100%;
-  /* vertical-align: middle; */
-  /* margin-right: -0.25em; */
-  top: 0;
-  /* bottom: 0; */
-  left: 0;
-  /* right: 0; */
-  /* padding: 100%; */
-  /* display:  flex; */
-  /* display: grid; */
-  /* align-items: stretch; */
-  /* justify-content: stretch; */
-}
-
-/* .guess { */
-  /* display: inline-block;
-  vertical-align: middle;
-  width: 100% */
-
-  /* position: absolute; */
-  /* align-items: center; */
-  /* align-content: center; */
-  /* display: table-cell; */
-  /* text-align: center; */
-  /* vertical-align: middle; */
-/* } */
