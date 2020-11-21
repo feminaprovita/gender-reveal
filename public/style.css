@@ -1,0 +1,14 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #C7E5FF;
+  margin: 0; /* should fix navbar left-edge */
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}

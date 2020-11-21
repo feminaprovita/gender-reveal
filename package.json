@@ -1,0 +1,56 @@
+{
+  "name": "gender-reveal",
+  "version": "1.0.0",
+  "description": "Just a very simple one-click page for our new baby!",
+  "engines": {
+    "node": "11.0.0",
+    "npm": "6.13.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feminaprovita/gender-reveal.git"
+  },
+  "scripts": {
+    "build-client": "webpack --display-error-details",
+    "build-client-watch": "webpack -w",
+    "deploy": "script/deploy",
+    "postinstall": "touch secrets.js & NODE_ENV='development' npm run build-client",
+    "start": "node server",
+    "start-dev": "NODE_ENV='development' npm run build-client-watch & NODE_ENV='development' npm run start-server",
+    "start-server": "nodemon server -e html,js,scss --ignore public --ignore client"
+  },
+  "author": "Claire Gilligan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feminaprovita/portfolio-simple/issues"
+  },
+  "homepage": "https://github.com/feminaprovita/portfolio-simple#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "style-loader": "^0.23.1",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.7.4",
+    "@babel/plugin-proposal-function-sent": "^7.7.4",
+    "@babel/plugin-proposal-json-strings": "^7.7.4",
+    "@babel/plugin-proposal-numeric-separator": "^7.7.4",
+    "@babel/plugin-proposal-throw-expressions": "^7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+    "@babel/plugin-syntax-import-meta": "^7.7.4",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
